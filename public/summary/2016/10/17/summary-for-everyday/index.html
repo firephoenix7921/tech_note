@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  <head>
+<head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="/public/css/syntax.css">
   <link rel="stylesheet" href="/public/css/hyde.css">
   <link rel="stylesheet" href="/public/css/custom.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="/public/css/font-awesome.min.css" >
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
@@ -31,8 +31,47 @@
 </head>
 
 
-  <body class="theme-base-chocolate">
-
+<body class="theme-base-chocolate">
+    <div class="navbar">
+    <h1>
+        <a class="home-logo" href="/">
+            Xuduoduo's Blog
+        </a>
+    </h1>
+    <nav>
+        
+        <a href="/">Home</a>
+        
+        
+          
+            
+          
+        
+          
+            
+          
+        
+          
+            
+              <a href="/about/">About</a>
+            
+          
+        
+          
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+        <a href="/TagCloud">Tag Cloud</a>
+    </nav>
+</div> 
     <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
@@ -57,6 +96,10 @@
       
         
           
+        
+      
+        
+          
             <a class="sidebar-nav-item" href="/about/">About</a>
           
         
@@ -67,21 +110,55 @@
           
         
       
+        
       
-      <a class="sidebar-nav-item" href="https://github.com/">GitHub project</a>
-      <span class="sidebar-nav-item">Currently v2.1.0</span>
+        
+      
+        
+      
+      
+      <a class="sidebar-nav-item" href="/TagCloud">Tag Cloud</a>
+      
+      <a class="sidebar-nav-item" href="https://github.com/firephoenix7921">GitHub project</a>
+      <span class="sidebar-nav-item">
+        <ul class="list-inline text-center">
+          <li>
+              <a href="https://twitter.com/GUAbcSRBHMLPia8">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x"></i>
+                  </span>
+              </a>
+          </li>
+          <li>
+              <a href="/">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x"></i>
+                  </span>
+              </a>
+          </li>
+          <li>
+              <a href="https://github.com/firephoenix7921">
+                  <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-github fa-stack-1x"></i>
+                  </span>
+              </a>
+          </li>
+        </ul>
+      </span>
     </nav>
 
     <p>&copy; 2016. All rights reserved.</p>
   </div>
 </div>
-
-
+ 
     <div class="content container">
-      <div class="post">
-  <h1 class="post-title">Summary</h1>
-  <span class="post-date">17 Oct 2016</span>
-  <h1>日积月累</h1>
+        <div class="post">
+    <h1 class="post-title">Summary</h1>
+    <span class="post-date">17 Oct 2016</span>
+    <h1>日积月累</h1>
 
 <h2>5.5</h2>
 
@@ -425,16 +502,65 @@ cat index.ios.js | grep &quot;firstProject&quot;</li>
 减少http请求、使用内容分发网络</li>
 </ul>
 
+    
+    <div class="post-tag">
+    <span class="fa-stack fa-sm">
+      <i class="fa fa-tags fa-stack-1x"></i>
+    </span>:
+        
+        <a class="tag-wrapper" href="/tags/summary" title="View posts tagged with &quot;summary&quot;">
+            <span class="tags">summary</span>
+        </a>
+        
+        <a class="tag-wrapper" href="/tags/js" title="View posts tagged with &quot;js&quot;">
+            <span class="tags">js</span>
+        </a>
+        
+    </div>
+    
 </div>
 
 <div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    
-  </ul>
+    <h2>Related Posts</h2>
+    <ul class="related-posts">
+        
+        <li>
+            <h3>
+                <a href="/summary/2016/10/19/summary-css/">
+                    CSS Summary
+                    <small>19 Oct 2016</small>
+                </a>
+            </h3>
+        </li>
+        
+    </ul>
 </div>
+
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+     var disqus_config = function () {
+     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+     };
+     */
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//xuduoduo-me-1.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+
 
     </div>
 
-  </body>
+</body>
+
 </html>
