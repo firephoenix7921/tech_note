@@ -4,7 +4,7 @@
  <title>Xuduoduo's Blog</title>
  <link href="http://xuduoduo.me/atom.xml" rel="self"/>
  <link href="http://xuduoduo.me/"/>
- <updated>2016-10-20T15:55:27+08:00</updated>
+ <updated>2016-10-20T18:41:12+08:00</updated>
  <id>http://xuduoduo.me</id>
  <author>
    <name>xuduoduo</name>
@@ -22,7 +22,7 @@
 &lt;h2&gt;盒模型&lt;/h2&gt;
 
 &lt;p&gt;盒模型(box model)是CSS中的一个重要概念，它是元素大小的呈现方式。
-&lt;img src=&quot;media/14689858869016/box.png&quot; alt=&quot;box&quot;&gt;
+&lt;img src=&quot;media/box.png&quot; alt=&quot;box&quot;&gt;
 CSS3中新增了一种盒模型计算方式：box-sizing属性。盒模型默认的值是content-box, 新增的值是padding-box和border-box，几种盒模型计算元素宽高的区别如下：
 1. content-box（默认）
 布局所占宽度Width：

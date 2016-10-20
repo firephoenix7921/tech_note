@@ -6,7 +6,8 @@ var minifyCSS = require('gulp-minify-css'),
     rename = require('gulp-rename'),
     rev = require('gulp-rev'),
     revCollector = require('gulp-rev-collector'),
-    processhtml = require('gulp-processhtml');
+    processhtml = require('gulp-processhtml'),
+    imagemin = require('gulp-imagemin');
 
 gulp.task('processhtml', function() {
     return gulp.src('./public/**/*.html')
@@ -26,15 +27,32 @@ gulp.task('css', function() {
         .pipe(gulp.dest('./rev'));
 });
 
+/**
+ *  版本控制
+ */
 gulp.task('rev', function() {
     gulp.src(['./rev/*.json', './public/**/*.html'])
         .pipe(revCollector())
         .pipe(gulp.dest('./public'));
 });
 
+/**
+ *  迁移font字体
+ */
 gulp.task('font', function() {
     gulp.src('public/public/css/fonts/*')
         .pipe(gulp.dest('public/public/dist/css/fonts'))
+});
+
+/**
+ *  图片压缩
+ */
+gulp.task('images', function() {
+    gulp.src('public/public/media/*.*')
+        .pipe(imagemin({
+            progressive: true
+        }))
+        .pipe(gulp.dest('public/public/media/'))
 });
 
 // 在命令行使用 gulp auto 启动此任务
@@ -45,4 +63,4 @@ gulp.task('auto', function() {
 
 // 使用 gulp.task('default') 定义默认任务
 // 在命令行使用 gulp 启动 css 任务和 auto 任务
-gulp.task('default', ['css', 'rev', 'font']);
+gulp.task('default', ['css', 'rev', 'font', 'images']);
